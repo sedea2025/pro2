@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Edu+QLD+Hand:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Cherry+Bomb+One&family=Edu+QLD+Hand:wght@400..700&display=swap');
+
+
+
+:root {
+    --maincolor: rgba(161, 214, 36, 0.733);
+    --secondaryColor: red;
+}
+
+body {
+    font-family: cairo;
+
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+
+.top-header {
+    background-color: var(--maincolor);
+
+}
+
+.left-header a {
+    margin-left: 20px;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+.left-header a :hover {
+    color: var(--secondaryColor) !important;
+}
+
+.menu-icon {
+    border-radius: 10px !important;
+    box-shadow: 3px 4px 9px red;
+
+}
+
+.nav-link {
+    font-weight: bold !important;
+}
+
+.buttom-header {
+    box-shadow: 3px 3px 3px rgba(12, 10, 10, 0.137);
+}
+
+
+/* START SECTION CATEGORI */
+
+.categories {
+    margin-top: 50px;
+}
+
+
+
+.cat img {
+    transition: all 0.3s;
+}
+
+
+
+
+.cat:hover img {
+    scale: 1.1;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: var(--secondaryColor);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* END SECTION CATEGORI */
+
+
+/* START SECTION PRODUCT */
+.products {
+    margin-top: 70px;
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.product-info h3 {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.product-info p {
+    font-size: 14px;
+}
+
+.stars i {
+    color: var(--maincolor);
+    font-size: 20px;
+}
+
+.price :first-child {
+    color: red;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.price :last-child {
+    text-decoration: line-through;
+}
+
+.quick-icons {
+    position: absolute;
+    background-color: rgba(253, 245, 230, 0.5);
+    right: -40px;
+    top: 0;
+    height: 150px;
+    width: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.3s;
+    border: 1px solid var(--maincolor);
+}
+
+.quick-icons i {
+    font-size: 19px;
+}
+
+
+.product:hover .quick-icons {
+    right: 0;
+}
+
+/* END SECTION PRODUCT  */
+
+/* START NEW PRODUCTS SECTION  */
+.new-products {
+    background-color: #eee;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
+
+
+/* END NEW PRODUCTS SECTION  */
+
+
+
+.btns-quntity button {
+    border: 1px solid #eee;
+}
+
+.btns-quntity button:hover {
+    border: 1px solid #ccc;
+}
+
+.btns-quntity button:active {
+    border: 1px solid #ccc !important;
+}
+
+.add-btn button {
+    font-size: 14px !important;
+}
+
+@media (max-width:786px) {
+    .add-btn button {
+        font-size: 14px !important;
+    }
+}
+
+.mini-card {
+    background-color: #eee;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+
+}
+
+.mini-card img {
+    border-radius: 10px;
+
+}
+
+.btn-mini {
+    background-color: white !important;
+    padding: 17px;
+    margin: 4px;
+    border: 4px solid red;
+}
+
+.btn-mini:hover {
+    border: 4px solid red;
+    /* transform: translatey(-40ox); */
+
+}
+
+.row-mini-card {
+    padding-bottom: 20px;
+    border-bottom: 2px dashed red;
+}
+
+.mini-login {
+    border: 2px dashed #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.week-products {
+    background-color: #eee;
+    padding: 50px;
+
+}
+
+.product-sm {
+    background-color: rgba(92, 177, 177, 0.212);
+    padding: 5px;
+    border-radius: 5px dashed rgb(37, 32, 32);
+    overflow: hidden !important;
+}
+
+.product-sm:hover img {
+    rotate: 20deg;
+}
+
+
+
+عند اضافة اللون لحدود ماعم يصير لا لون ولا حدود الوقت ماشغال .product-sm img {
+    border-radius: 50px red;
+    text-shadow: red;
+    transition: all 0.3s;
+
+}
+
+.product-sm .product-info :first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-sm .product-info :last-child {
+    font-weight: bold;
+    color: red;
+}
+
+.mini-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: red;
+}
+
+
+/* start ads */
+
+.ads {
+    background-color: #eee;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.col.ads {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 10px !important;
+    cursor: pointer;
+
+}
+
+
+
+.ads .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    z-index: 100 !important;
+}
+
+
+.ads .ads-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 110 !important;
+}
+
+.ads:hover img {
+    scale: 1.1;
+
+}
+
+.ads img {
+    transition: 0.3s;
+}
+
+
+
+
+
+.ads .ads-info h3 {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Almaria;
+}
+
+
+.ads .ads-info p {
+    color: white;
+}
+
+/* END ADS */
+
+
+/* START section FOOTER */
+footer {
+    background-color: rgb(15, 12, 12);
+    padding-top: 50px;
+    margin-top: 100px;
+    background-image: url(../images/footerbg\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid red;
+}
+
+footer h3 {
+    color: white;
+    font-family: almarai;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer a {
+    color: rgb(146, 127, 127) !important;
+}
+
+
+
+.f1 p,
+.f4 p {
+    font-size: 14px;
+    margin-top: 20px;
+   line-height: 1.8;
+    width: 90%;
+    color: rgb(146, 127, 127) !important;
+}
+
+
+footer .row:first-child {
+    border-bottom: 1px dashed rgba(160, 155, 155, 0.068);
+    padding-bottom: 30px;
+
+}
+
+footer .navbar-nav li {
+  margin-bottom: 10px;
+
+}
+
+/* END section FOOTER */
+
+
+.carousel-images {
+    position: absolute !important;
+    bottom:-70px !important;
+}
+
+
+
+.img-slider {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 15px;
+   border: 5px dashed red !important;
+}
+
+.bunner {
+    background-color: black;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-bottom: 2px solid red ;
+}
+
+.category-title {
+    color: white;
+    font-weight: bold;
+    font-size: 33px;
+    text-align: center;
+}
+
+.filtter-section {
+    background-color: #eee ;
+    border: 1px solid #CCc;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.filter-title {
+    font-weight: bold;
+    font-size: 33px;
+
+}
